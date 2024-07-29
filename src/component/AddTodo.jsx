@@ -34,8 +34,7 @@ function AddTodo() {
         })
     }
 
-    const handleTodo = (e) => {
-        e.preventDefault()
+    const handleTodo = () => {
         const inputId = { ...input, id: nanoid() }
         dispatch(addTodo(inputId))
         alert("submit")
